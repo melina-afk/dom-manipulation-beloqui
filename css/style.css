@@ -1,0 +1,55 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    width: 250px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.acciones {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.editable:hover {
+    background-color: #e0e0ff;
+    cursor: pointer;
+}
+
+.input-temporal {
+    display: block;
+    width: 90%;
+    margin: 6px auto;
+}
+
+.form-temp {
+    padding: 10px;
+    background-color: #fffbe0;
+    border: 1px dashed #aaa;
+    margin: 12px;
+    border-radius: 6px;
+}
+#btn_agregar
+{
+    cursor: pointer;
+}
+.fa-regular fa-pen-to-square
+{
+    cursor: pointer;
+}
+.fa-solid fa-trash-can
+{
+    cursor: pointer;
+}
