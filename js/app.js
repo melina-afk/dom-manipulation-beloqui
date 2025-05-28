@@ -135,5 +135,15 @@ const [titulo, descripcion] = card.querySelectorAll(".editable");
         };
         //cancela y remueve el form 
         btnCancelar.onclick = () => card.remove();
-    };
+    }
+    //limpia el contenedor y vuelve a mostrar todas las tarjetas
+        const renderizar = () => {
+            container.querySelectorAll(".card").forEach(c => c.remove()); //elimina tarjetas viejas
+            cards.forEach((card, i) => crearCard(card, i)); //Vuelve a crearlas
+        };
+
+        btnAgregar.onclick = crearCardEditable;
+        
+        //carga las tarjetas al iniciar
+        renderizar();
 });
