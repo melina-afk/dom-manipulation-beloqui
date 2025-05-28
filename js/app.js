@@ -85,5 +85,55 @@ const [titulo, descripcion] = card.querySelectorAll(".editable");
 
     titulo.ondblclick = () => activarEdicion(titulo, i, "titulo");
     descripcion.ondblclick = () => activarEdicion(descripcion, i, "descripcion");
-    }
+    
+    //elimina la tarjeta actual
+    btnEliminar.onclick = () => {
+            cards.splice(i, 1);
+            guardarStorage();
+            renderizar();
+        };
+
+        container.appendChild(card);
+    };
+    
+    //crea una tarjeta editable (form) para ingresar nuevos datos
+
+    const crearCardEditable = () => {
+        const card = document.createElement("div");
+        card.className = "form-temp";
+
+        const inputUrl = crearInput("URL de imagen");
+        const inputTitulo = crearInput("Título");
+        const inputDesc = crearInput("Descripción");
+
+        //botón para guardar nueva tarjeta
+        const btnGuardar = document.createElement("button");
+        btnGuardar.textContent = "Guardar";
+        btnGuardar.className = "btn-guardar";
+
+        //botón para cancelar creación
+        const btnCancelar = document.createElement("button");
+        btnCancelar.textContent = "Cancelar";
+        btnCancelar.className = "btn-cancelar";
+
+        [inputUrl, inputTitulo, inputDesc, btnGuardar, btnCancelar].forEach(el => card.appendChild(el));
+        container.appendChild(card);
+
+    //crea la tarjeta si todos los campos estan completos
+        btnGuardar.onclick = () => {
+            const img = inputUrl.value.trim();
+            const titulo = inputTitulo.value.trim();
+            const descripcion = inputDesc.value.trim();
+            if (img && titulo && descripcion) {
+                cards.push({ img, titulo, descripcion });
+                guardarStorage();
+                renderizar();
+                card.remove(); // elimina el form
+            } else {
+                alert("Completá todos los campos.");
+            }
+        };
+        //cancela y remueve el form 
+        btnCancelar.onclick = () => card.remove();
+    };
 });
