@@ -54,11 +54,11 @@ Además, trabajar con localStorage supuso aprender cómo almacenar y recuperar d
 ## Funcionamiento de la app:
 ## ¿Como agregar tarjetas?
 1) Se debe hacer click en el boton "+"
-<img src="assets/capturas_de_pantalla/agregar_tarjeta.png">
+   <img src="assets/capturas_de_pantalla/agregar_tarjeta.png">
 2) Completa los campos de información y apreta en el boton "guardar" (si no completas estos campos no sera posible crear la tarjeta).
-<img src="assets/capturas_de_pantalla/agregar_tarjeta2.png">
+   <img src="assets/capturas_de_pantalla/agregar_tarjeta2.png">
 3) Tu tarjeta ahora estara creada!
-<img src="assets/capturas_de_pantalla/agregar_tarjeta3.png">
+   <img src="assets/capturas_de_pantalla/agregar_tarjeta3.png">
 4) (opcional) puedes agregar varias tarjetas y luego completar los datos.
    <img src="assets/capturas_de_pantalla/funcionalidad1.png">
 
