@@ -1,5 +1,3 @@
-# Documentación
-
 # Título
 ### Manipulacion y gestión del DOM
 #### Alumna: Beloqui Melina
@@ -52,4 +50,31 @@ La manipulación del DOM se maneja completamente con JavaScript puro (sin framew
 # Retos y aprendizajes
 Uno de los principales desafíos fue implementar la edicion de varios campos en una tarjeta. Por lo tanto opté por un doble enfoque: edición inline rápida y edición mediante formulario completo. Esto implicó manejar eventos como blur (cuando se hace clic fuera de ese campo, o presionás Tab para pasar a otro, el input pierde el foco) y keypress (al apretar "enter") para asegurar que los datos se guardaran correctamente sin requerir demasiada interacción del usuario.
 Además, trabajar con localStorage supuso aprender cómo almacenar y recuperar datos complejos en formato JSON. Fue importante garantizar que cada acción sobre las tarjetas (crear, editar, eliminar) se sincronizara correctamente con el almacenamiento local y que la función renderizar() siempre reflejara el estado actualizado del array.
-# Capturas de pantalla o GIFs
+# Capturas de pantalla 
+## Funcionamiento de la app:
+## ¿Como agregar tarjetas?
+1) Se debe hacer click en el boton "+"
+<img src="assets/capturas_de_pantalla/agregar_tarjeta.png">
+2) Completa los campos de información y apreta en el boton "guardar" (si no completas estos campos no sera posible crear la tarjeta).
+<img src="assets/capturas_de_pantalla/agregar_tarjeta2.png">
+3) Tu tarjeta ahora estara creada!
+<img src="assets/capturas_de_pantalla/agregar_tarjeta3.png">
+4) (opcional) puedes agregar varias tarjetas y luego completar los datos.
+   <img src="assets/capturas_de_pantalla/funcionalidad1.png">
+
+## Como editar tarjetas
+1) Presiona el lapiz para comenzar a editar la tarjeta que elegida.
+   <img src="assets/capturas_de_pantalla/editar_tarjeta1.png">
+2) Completa los campos que vayas a actualizar.
+   <img src="assets/capturas_de_pantalla/editar_tarjeta.png">
+3) Guarda nuevamente los datos.
+   <img src="assets/capturas_de_pantalla/editar_tarjeta2.png">
+4) Tu tarjeta ya estara actualizada!
+    <img src="assets/capturas_de_pantalla/editar_tarjeta3.png">
+5) Si deseas cambiar un solo campo puedes hacerle doble click y editarlo.
+   <img src="assets/capturas_de_pantalla/editar_tarjeta4.png" alt="Dato que quieres cambiar">
+   <img src="assets/capturas_de_pantalla/editar_tarjeta5.png">
+## Como eliminar una tarjeta
+- Haz click en el boton de eliminar y listo! 
+  Tu tarjeta sera eliminada.
+<img src="assets/capturas_de_pantalla/borrar_tarjeta.png">

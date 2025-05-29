@@ -1,5 +1,13 @@
+body
+{
+    background-color: rgb(253, 237, 236);
+}
+h1
+{
+    text-align: center;
+}
 .card {
-    border: 1px solid #ccc;
+    border: 2px solid #887f7f;
     border-radius: 8px;
     padding: 12px;
     margin: 12px;
@@ -11,7 +19,8 @@
 .card-img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 6px black solid ;
+
 }
 
 .acciones {
@@ -24,7 +33,7 @@
 }
 
 .editable:hover {
-    background-color: #e0e0ff;
+    background-color: #7a7a80;
     cursor: pointer;
 }
 
@@ -43,6 +52,8 @@
 }
 #btn_agregar
 {
+    font-size: 30px;
+    color: rgb(2, 153, 199);
     cursor: pointer;
 }
 .fa-regular fa-pen-to-square
@@ -51,5 +62,6 @@
 }
 .fa-solid fa-trash-can
 {
+    color:black ;
     cursor: pointer;
 }
