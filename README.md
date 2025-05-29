@@ -1,6 +1,6 @@
 # Título
 ### Manipulacion y gestión del DOM
-#### Alumna: Beloqui Melina
+#### Alumnas: Beloqui Melina y Jauregui Martina
 # Descripción del proyecto
 Este proyecto trata de una mini-aplicación web que puede crear, editar y eliminar tarjetas (“cards”) de producto dinámicamente manipulando el DOM con JavaScript.
 # Instrucciones de instalación
